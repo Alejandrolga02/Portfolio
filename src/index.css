@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	scroll-behavior: smooth;
+	scroll-padding-top: 3rem;
+}
+
 @layer base {
 	html {
 		@apply font-sans;
@@ -9,24 +14,39 @@
 }
 
 @layer components {
+	.navbar {
+		@apply bg-primary text-slate-100 sticky top-0 left-0 right-0 flex flex-col justify-between items-center px-4 py-2 md:flex-row
+	}
 	.navbar-header {
-		@apply inline text-2xl
+		@apply flex
 	}
 	.navbar-title {
 		@apply text-2xl font-medium select-none
 	}
 
 	.navbar-content {
-		@apply min-h-screen flex flex-col justify-center space-y-4 list-none py-2 px-4;
+		@apply min-h-screen w-full flex flex-col justify-center space-y-4 list-none py-2 px-4 md:flex-row md:space-y-0 md:space-x-3 md:min-h-fit md:justify-end;
 	}
 
 	.navbar-item {
-		@apply text-2xl
+		@apply text-xl text-center 
+	}
+
+	.navbar-link {
+		@apply border-b border-solid border-b-transparent transition-all duration-300 ease-in-out hover:border-b-accent;
 	}
 }
 
 @layer utilities {
 	.hover-accent {
 		@apply transition-colors duration-300 ease-in-out hover:text-accent;
+	}
+
+	.hidden-mobile {
+		@apply hidden md:flex
+	}
+
+	.hidden-desktop {
+		@apply flex md:hidden
 	}
 }

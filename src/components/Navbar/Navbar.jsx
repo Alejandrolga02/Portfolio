@@ -1,45 +1,42 @@
 import { useCallback, useRef } from "react";
+
+import 'animate.css';
 import { AiOutlineMenuUnfold, HiCode } from "react-icons/all";
+
+import { NavItem } from "./NavItem";
 
 export const Navbar = () => {
 	const menuContainer = useRef(null);
 	const buttonContainer = useRef(null);
+
 	const handleMenuButton = useCallback(() => {
-		if (menuContainer.current.className === "navbar-content") {
-			menuContainer.current.className = "hidden";
-		} else {
-			menuContainer.current.className = "navbar-content";
-		}
+			menuContainer.current.classList.toggle("hidden-mobile");
+	}, []);
+
+	const closeNavbarMobile = useCallback(() => {
+		menuContainer.current.classList.add("hidden-mobile");
 	}, []);
 
 	return (
-		<nav className="bg-primary text-slate-100 flex flex-col justify-between items-center px-4 py-2">
+		<nav className="navbar">
 			<div className="w-full flex justify-between items-center">
 				<h1 className="navbar-title">
 					<a href="#" className="navbar-header">
-						<HiCode className="inline mr-2" size="2rem" />
+						<HiCode className="mr-2" size="2rem" />
 						Alejandro Lizarraga
 					</a>
 				</h1>
-				<div ref={buttonContainer} className="flex items-center">
-					<button>
-						<AiOutlineMenuUnfold onClick={() => handleMenuButton()} size="2rem" className="hover-accent" />
+				<div ref={buttonContainer} className="items-center hidden-desktop">
+					<button onClick={() => handleMenuButton()}>
+						<AiOutlineMenuUnfold size="2rem" className="hover-accent" />
 					</button>
 				</div>
 			</div>
-			<ul ref={menuContainer} className="hidden">
-				<li className="navbar-item hover-accent">
-					<a href="#">Test</a>
-				</li>
-				<li className="navbar-item hover-accent">
-					<a href="#">Test</a>
-				</li>
-				<li className="navbar-item hover-accent">
-					<a href="#">Test</a>
-				</li>
-				<li className="navbar-item hover-accent">
-					<a href="#">Test</a>
-				</li>
+			<ul ref={menuContainer} className="navbar-content hidden-mobile animate__animated animate__fadeInDownBig ">
+				<NavItem handleClose={closeNavbarMobile} link="#" title="Lorem" />
+				<NavItem handleClose={closeNavbarMobile} link="#" title="Lorem" />
+				<NavItem handleClose={closeNavbarMobile} link="#" title="Lorem" />
+				<NavItem handleClose={closeNavbarMobile} link="#" title="Lorem" />
 			</ul>
 		</nav>
 	);
