@@ -1,13 +1,14 @@
 import { Navbar } from "./components/Navbar/navbar";
+import { Presentation } from "./components/Presentation/Presentation";
 
 export const App = () => {
 	return (
 		<>
 			<Navbar />
 
-			
-			<img src="public/code-typing-animate.svg" className="w-1/2" alt="typing banner" />
-			<a href="https://storyset.com/work">Work illustrations by Storyset</a>
+			<div className="bg-primary">
+				<Presentation />
+			</div>
 
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae necessitatibus cumque, reiciendis ipsam exercitationem? Maiores ad, aperiam nam rem autem esse sunt eaque minus quidem laborum natus tempora cum! Placeat, ducimus
