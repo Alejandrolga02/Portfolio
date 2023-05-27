@@ -83,7 +83,7 @@ html {
 	}
 
 	.presentation-container {
-		@apply min-h-screen bg-primary gap-8 pt-12 pb-4 grid grid-cols-1 md:grid-cols-2;
+		@apply min-h-screen gap-8 pt-12 pb-4 grid grid-cols-1 md:grid-cols-2;
 	}
 
 	.presentation-image-container {
@@ -92,11 +92,42 @@ html {
 
 	.presentation-image {
 		@apply w-[30rem] sm:w-[18rem] md:w-[20rem] hover:-translate-y-4 duration-500 ease-in-out z-0;
-		filter: drop-shadow(0px 10px 10px #0466c8);
 	}
 
 	.presentation-credit {
 		@apply text-slate-100;
+	}
+
+	.certifications-container {
+		@apply container py-8 text-slate-100;
+	}
+
+	.certifications-heading {
+		@apply text-3xl mb-4;
+	}
+
+	.certificationsList-container {
+		@apply flex flex-wrap justify-center items-center;
+	}
+
+	.certification-padding {
+		@apply w-full md:w-1/2 xl:w-1/3 p-4;
+	}
+
+	.certification-container {
+		@apply w-full flex-1 flex flex-col justify-center items-center py-2 px-4 bg-secondary-accent hover:shadow-lg hover:shadow-secondary-accent rounded-lg transition-all duration-500 ease-in-out hover:-translate-y-1;
+	}
+
+	.certification-icon {
+		@apply text-9xl mb-2
+	}
+
+	.certification-name {
+		@apply transition-colors duration-500 text-xl font-medium;
+	}
+
+	.certification-issuer {
+		@apply text-slate-300;
 	}
 }
 
@@ -115,5 +146,9 @@ html {
 
 	.container {
 		@apply mx-auto px-4 w-full sm:w-[38rem] md:w-[45rem] lg:w-[60rem] xl:w-[74rem] 2xl:w-[88rem];
+	}
+
+	.shadow-filter {
+		filter: drop-shadow(0px 10px 10px #0466c8);
 	}
 }

@@ -1,3 +1,4 @@
+import { Certifications } from "./components/Certifications/Certifications";
 import { Navbar } from "./components/Navbar/navbar";
 import { Presentation } from "./components/Presentation/Presentation";
 
@@ -8,6 +9,10 @@ export const App = () => {
 
 			<div className="bg-primary">
 				<Presentation />
+			</div>
+
+			<div className="bg-secondary">
+				<Certifications />
 			</div>
 
 			<p>
