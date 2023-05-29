@@ -3,7 +3,7 @@ import { Skill } from "./Skill";
 export const HardSkills = () => {
 	return (
 		<div>
-			<h4><span className="text-accent text-xl">Hard</span> Skills</h4>
+			<h4 className="text-xl"><span className="text-accent">Hard</span> Skills</h4>
 			<div className="skillsList-container">
 				<Skill name="Javascript" icon="/js.svg"/>
 				<Skill name="Express" icon="/express.svg"/>
@@ -14,7 +14,6 @@ export const HardSkills = () => {
 				<Skill name="Git" icon="/git.svg"/>
 				<Skill name="MySQL" icon="/mysql.svg"/>
 				<Skill name="AWS" icon="/aws.svg"/>
-				<Skill name="Firebase" icon="/firebase.svg"/>
 				<Skill name="Azure" icon="/azure.svg"/>
 			</div>
 		</div>

@@ -4,8 +4,8 @@ export const Skill = ({ name, icon }) => {
 	return (
 		<div className="skill-padding">
 			<div className="skill-container group">
-				<img className="skill-icon group-hover:shadow-pink" src={icon} />
-				<a className="group-hover:text-accent certification-name" target="_blank" rel="noreferrer">
+				<img className="skill-icon group-hover:shadow-skill" src={icon} />
+				<a className="group-hover:text-accent accent-text text-center" target="_blank" rel="noreferrer">
 					{name}
 				</a>
 			</div>

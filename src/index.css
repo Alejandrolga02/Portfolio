@@ -83,7 +83,7 @@ html {
 	}
 
 	.presentation-container {
-		@apply min-h-screen xl:min-h-[75rem]  gap-8 pt-12 pb-4 grid grid-cols-1 md:grid-cols-2;
+		@apply min-h-screen 4xl:min-h-[75rem]  gap-8 pt-12 pb-4 grid grid-cols-1 md:grid-cols-2;
 	}
 
 	.presentation-image-container {
@@ -118,10 +118,6 @@ html {
 		@apply text-slate-100 w-1/2 aspect-square rounded-md mb-4
 	}
 
-	.certification-name {
-		@apply transition-colors duration-500 text-xl font-medium;
-	}
-
 	.certification-issuer {
 		@apply text-slate-300;
 	}
@@ -131,7 +127,7 @@ html {
 	}
 
 	.skill-padding {
-		@apply w-full sm:w-1/2 md:w-1/4 lg:w-[20%] xl:w-[12.5%] p-2;
+		@apply w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2;
 	}
 
 	.skill-container {
@@ -168,11 +164,15 @@ html {
 		filter: drop-shadow(0px 10px 10px #0466c8);
 	}
 
-	.shadow-pink {
-		filter: drop-shadow(0px 0px 12px #BD4089);
+	.shadow-skill {
+		filter: drop-shadow(0px 3px 15px #0466c8);
 	}
 
 	.heading {
 		@apply text-3xl mb-4;
+	}
+
+	.accent-text {
+		@apply transition-colors duration-500 text-xl font-medium;
 	}
 }

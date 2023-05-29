@@ -20,6 +20,9 @@ export default {
 			},
 			minHeight: {
 				'screen': 'calc(100vh - 3rem)'
+			},
+			screens: {
+				'4xl': '1960px'
 			}
 		},
 	},
