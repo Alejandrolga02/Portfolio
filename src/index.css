@@ -4,7 +4,7 @@
 
 :root {
 	scroll-behavior: smooth;
-	scroll-padding-top: 3rem;
+	scroll-padding-top: 5.75rem;
 }
 
 html {
@@ -83,7 +83,7 @@ html {
 	}
 
 	.presentation-container {
-		@apply min-h-screen 4xl:min-h-[75rem]  gap-8 pt-12 pb-4 grid grid-cols-1 md:grid-cols-2;
+		@apply min-h-screen 4xl:min-h-[75rem] gap-8 pt-12 pb-4 grid grid-cols-1 md:grid-cols-2;
 	}
 
 	.presentation-image-container {
@@ -140,6 +140,30 @@ html {
 
 	.skill-icon {
 		@apply text-slate-100 w-full aspect-square rounded-md mb-4 transition-all duration-500;
+	}
+
+	.contact-container {
+		@apply container text-slate-100 py-4;
+	}
+
+	.contact-heading {
+		@apply text-3xl text-center mb-4;
+	}
+
+	.contact-content {
+		@apply flex flex-col justify-start items-center gap-2 mb-6;
+	}
+
+	.contact-links {
+		@apply flex flex-col justify-center gap-4 w-full;
+	}
+
+	.contact-link {
+		@apply flex gap-2 items-center;
+	}
+
+	.contact-button {
+		@apply block ms-2 max-w-fit border-2 border-accent hover:bg-accent py-2 px-4 hover:scale-105 duration-300 transition-all;
 	}
 }
 
