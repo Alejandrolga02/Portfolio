@@ -8,7 +8,7 @@ export const Certification = ({ icon, link, name, issuer }) => {
 				<a className="group-hover:text-accent accent-text" href={link} target="_blank" rel="noreferrer">
 					{name}
 				</a>
-				<p className="">{issuer}</p>
+				<p className="text-gray-300">{issuer}</p>
 			</div>
 		</div>
 	);

@@ -6,7 +6,7 @@ export const Presentation = () => {
 		<main className="container">
 			<div className="presentation-container">
 				<section className="text-slate-100">
-					<p className="text-xl mb-4">
+					<p className="text-xl mb-4" id="presentation">
 						Hello <span className="text-accent">I am</span>
 					</p>
 					<h2 className="text-5xl font-bold text-accent mb-2">Alejandro Lizárraga</h2>
