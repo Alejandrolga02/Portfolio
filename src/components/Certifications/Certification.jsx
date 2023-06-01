@@ -5,7 +5,7 @@ export const Certification = ({ icon, link, name, issuer }) => {
 		<div className="item-padding">
 			<div className="certification-container group">
 				<img className="certification-icon" src={icon} />
-				<a className="group-hover:text-accent accent-text" href={link} target="_blank" rel="noreferrer">
+				<a className="group-hover:text-accent accent-text text-center " href={link} target="_blank" rel="noreferrer">
 					{name}
 				</a>
 				<p className="text-gray-300">{issuer}</p>

@@ -7,7 +7,7 @@ export const SoftSkills = () => {
 			<div className="skillsList-container">
 				<Skill name="Communicative" icon="/communication.svg" />
 				<Skill name="Commitment" icon="/determination.svg" />
-				<Skill name="Problem-solving" icon="/problemSolving.svg" />
+				<Skill name="Problem &#13; Solving" icon="/problemSolving.svg" />
 				<Skill name="Team Work" icon="/teamWork.svg" />
 				<Skill name="Time management" icon="/timeManagement.svg" />
 				<Skill name="Attention to Detail" icon="/attentionDetail.svg" />
