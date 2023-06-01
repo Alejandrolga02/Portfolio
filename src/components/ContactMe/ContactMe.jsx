@@ -1,5 +1,5 @@
 import { AiOutlineArrowUp } from 'react-icons/ai';
-import { CV } from "../Icons/CV";
+import { Cv } from "../Icons/Cv";
 import { GitHub } from "../Icons/GitHub";
 import { Linkedin } from "../Icons/Linkedin";
 
@@ -16,7 +16,7 @@ export const ContactMe = () => {
 				<div className="contact-links">
 					<p className="contact-link">GitHub: <GitHub  /></p>
 					<p className="contact-link">Linkedin: <Linkedin /></p>
-					<p className="contact-link">My CV: <CV /></p>
+					<p className="contact-link">My CV: <Cv /></p>
 					<p className="contact-link">Mail: <a target="_blank" rel='noreferrer' href="mailto:alejandroivanliza@gmail.com" className="hover:shadow-filter hover:text-accent font-bold transition-all duration-300">alejandroivanliza@gmail.com</a></p>
 				</div>
 				<a className="contact-button" href="#presentation">
