@@ -35,8 +35,9 @@ export const Navbar = () => {
 			</div>
 			<ul ref={menuContainer} className="navbar-content hidden-mobile animate__animated animate__fadeInDownBig ">
 				<NavItem handleClose={closeNavbarMobile} link="#presentation" title="Home" />
-				<NavItem handleClose={closeNavbarMobile} link="#certifications" title="Certifications" />
+				<NavItem handleClose={closeNavbarMobile} link="#projects" title="Projects" />
 				<NavItem handleClose={closeNavbarMobile} link="#skills" title="Skills" />
+				<NavItem handleClose={closeNavbarMobile} link="#certifications" title="Certifications" />
 				<NavItem handleClose={closeNavbarMobile} link="#contactMe" title="Contact Me" />
 			</ul>
 		</nav>

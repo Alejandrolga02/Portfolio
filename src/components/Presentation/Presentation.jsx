@@ -22,13 +22,13 @@ export const Presentation = () => {
 						<GitHub />
 						<Linkedin />
 					</div>
-					<a href="#" target="_blank" className="block ms-2 max-w-fit border-2 border-accent py-2 px-4 hover:bg-black hover:scale-105 duration-300 transition-all shadow-lg shadow-accent">
+					<a href="https://drive.google.com/file/d/1To8S5YZsohy_ZXvkDEJ1ywLI0unwlmKO/view?usp=sharing" target="_blank" rel="noreferrer" className="block ms-2 max-w-fit border-2 border-accent py-2 px-4 hover:bg-black hover:scale-105 duration-300 transition-all shadow-lg shadow-accent">
 						Check out my CV
 					</a>
 				</section>
 				<section className="presentation-image-container">
 					<img src="/presentation-banner.svg" className="presentation-image shadow-filter" alt="typing banner" />
-					<a href="https://storyset.com/work" className="presentation-credit">
+					<a target="_blank" rel="noreferrer" href="https://storyset.com/work" className="presentation-credit">
 						Work illustrations by Storyset
 					</a>
 				</section>

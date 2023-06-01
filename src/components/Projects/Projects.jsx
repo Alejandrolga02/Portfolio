@@ -46,7 +46,7 @@ export const Projects = () => {
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 				<div className="flex flex-col gap-4">
-					<img src={project.image} alt="Imagen proyecto" />
+					<img src={project.image} className="aspect-video object-cover" alt="Imagen proyecto" />
 				</div>
 				<div className="col-start-1 row-start-1 md:col-start-2">
 					<h4 className="text-2xl mb-2">{project.name}</h4>
