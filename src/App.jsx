@@ -2,6 +2,7 @@ import { Certifications } from "./components/Certifications/Certifications";
 import { ContactMe } from "./components/ContactMe/ContactMe";
 import { Navbar } from "./components/Navbar/navbar";
 import { Presentation } from "./components/Presentation/Presentation";
+import { Projects } from "./components/Projects/projects";
 import { Skills } from "./components/Skills/Skills";
 
 export const App = () => {
@@ -14,7 +15,7 @@ export const App = () => {
 			</div>
 
 			<div className="bg-secondary">
-				<Certifications />
+				<Projects />
 			</div>
 
 			<div className="bg-primary">
